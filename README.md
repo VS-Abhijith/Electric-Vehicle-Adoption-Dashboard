@@ -68,7 +68,7 @@ This dashboard provides:
 
 
 ## 📈 Key Insights
-- **Clark County** leads in EV registrations
+- **King County** leads in EV registrations
 - **Tesla**, **Chevy**, and **Nissan** dominate the market
 - **EV adoption surged post-2019**, indicating rising interest and possible policy impacts
 - **High CAFV eligibility** rate for BEVs vs moderate for PHEVs

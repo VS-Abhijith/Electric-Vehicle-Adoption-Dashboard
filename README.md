@@ -61,6 +61,7 @@ This dashboard provides:
 
 
 ![image](https://github.com/user-attachments/assets/9fb021be-bb34-44f5-9fb0-02bd1e49d46f)
+![image](https://github.com/user-attachments/assets/80a36fb5-d8b9-44f6-bf57-f9a45d28be0a)
 
 ---
 
@@ -96,5 +97,5 @@ This dashboard provides:
 ## 🌟 Author
 **Abhijith VS**  
 IIT Madras - Diploma in Data Science  
-[LinkedIn Profile] (www.linkedin.com/in/vsabhijith)
+[LinkedIn Profile](www.linkedin.com/in/vsabhijith)
 

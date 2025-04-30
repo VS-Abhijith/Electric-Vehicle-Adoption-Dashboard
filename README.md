@@ -2,100 +2,116 @@
 
 ### 🔗 [View Data Source](https://catalog.data.gov/dataset/electric-vehicle-population-data)
 
-This Power BI project explores the growth and distribution of Electric Vehicles (EVs) in Washington State, 
-using publicly available registration data. The dashboard provides powerful insights that are beneficial for policymakers,
-utility companies, automakers, and data science professionals.
+This Power BI and Flourish bar chart race project explores the rise of Electric Vehicle (EV) adoption in Washington State. 
+Using data from the Washington State Department of Licensing (DOL), this dashboard offers compelling insights into the evolution of BEVs and PHEVs,
+helping stakeholders make informed decisions.
 
 ---
 
 ## 📊 Project Overview
-This dashboard provides:
+This interactive dashboard includes:
 - EV adoption trends from 2000 to 2025
 - Market share by brand and model
-- Regional EV density (county and map-based)
-- Electric vehicle type breakdown (BEV vs PHEV)
-- Electric utility-wise EV distribution
-- CAFV eligibility metrics
-- A clean, interactive user interface with filters and page navigation
+- Regional EV density (county-level and geospatial)
+- EV type breakdown (BEV vs PHEV)
+- Electric utility-based EV distribution
+- CAFV eligibility analysis
+- Dynamic filters and intuitive page navigation
 
 ---
 
-## 🪜 Target Users
-- **Government agencies & policymakers**
-- **Electric utility providers**
-- **EV manufacturers & stakeholders**
-- **Environmental analysts**
-- **Business analysts & data scientists**
+## 📺 Supplementary Visualization (Flourish)
+[🔗 View Flourish Bar Chart Race](https://public.flourish.studio/visualisation/22896671/)
+![Flourish Registered Electric Vehicles by Make_ edgeA Dynamic Visualization](https://github.com/user-attachments/assets/9177a9fb-3f12-4254-a9b2-144d49508b65)
+
+
+This animation showcases the rapid expansion of EVs over time. A highlight:
+- **Tesla’s dominance in the early 2010s** marked a transformative shift in EV strategy.
+- The bar chart captures how **innovation, incentives, and infrastructure** reshaped adoption patterns.
+- Reinforces **temporal data storytelling** with engaging visuals.
+
+---
+
+## 🧑‍💼 Target Users
+- Government agencies & policymakers
+- Electric utility companies
+- EV manufacturers & market analysts
+- Business analysts & data scientists
+- Environmental and transportation planners
 
 ---
 
 ## 🔧 Tools Used
 - Power BI Desktop
 - Power Query Editor
-- DAX (for calculated columns and measures)
+- DAX (Data Analysis Expressions)
+- Flourish Studio (for animated storytelling)
 
 ---
 
-## 📂 Data Cleaning & Preparation
+## 🧹 Data Cleaning & Preparation
 | Step | Description |
 |------|-------------|
 | Dropped Columns | VIN, DOL, 2020 Census Tract, MSRP (incomplete) |
-| Handled Nulls | ~3 nulls and ~7 rows without geolocation retained with caution |
-| Parsed Location | Split `Location` column (POINT format) into `Latitude` and `Longitude` |
-| Trimmed Fields | Removed whitespaces from text fields |
-| Verified Years | Model year range: 2000 to 2026 |
-| Derived Metrics | % BEV, % CAFV Eligible, Total EVs per year |
+| Null Handling | ~3 null entries and ~7 rows missing geolocation were kept with caution |
+| Location Parsing | Split `Location` POINT(x y) into `Latitude` and `Longitude` |
+| Column Cleanup | Trimmed all text columns |
+| Year Validation | Model years range from 2000 to 2026 |
+| Derived Metrics | % BEV, % CAFV Eligibility, Total EVs per year |
 
 ---
 
-## 🔹 Visualizations
+## 📈 Visualizations
 | Visualization | Type | Purpose |
 |---------------|------|---------|
-| EV Registrations Over Time | Line Chart | Adoption trends across years |
-| EV Type Breakdown | Donut Chart | BEV vs PHEV proportions |
-| Top 5 Brands / Models | Horizontal Bar Chart | Most registered makes and models |
-| EVs by County | Filled Map + line chart | Regional penetration analysis |
-| CAFV Eligibility | Stacked Column Chart | Share of environmentally eligible vehicles |
-| Geospatial View | Bubble Map | EV clusters using lat/long |
-| TOC Page | Buttons & Navigation | Improve user experience |
-
-
-![image](https://github.com/user-attachments/assets/9fb021be-bb34-44f5-9fb0-02bd1e49d46f)
-![image](https://github.com/user-attachments/assets/80a36fb5-d8b9-44f6-bf57-f9a45d28be0a)
+| EV Registration Trends | Line Chart | Adoption trends over time |
+| EV Type Distribution | Donut Chart | Share of BEVs vs PHEVs |
+| Top Brands & Models | Horizontal Bar Charts | Market leaders by registration count |
+| EVs by County | Filled Map + Bar Chart | Identify high-penetration counties |
+| CAFV Eligibility | Stacked Column Chart | Environmental eligibility status |
+| Geospatial EV View | Bubble Map | EV concentration using lat/long data |
+| Electric Utility View | Clustered Bar Chart | Distribution by utility provider |
+| Table of Contents | Navigation Page | Interactive page switch with button |
 
 ---
 
-
-
-## 📈 Key Insights
-- **King County** leads in EV registrations
-- **Tesla**, **Chevy**, and **Nissan** dominate the market
-- **EV adoption surged post-2019**, indicating rising interest and possible policy impacts
-- **High CAFV eligibility** rate for BEVs vs moderate for PHEVs
-- **Utility-level trends** can help optimize EV infrastructure planning
-
----
-
-## 📍 Deployment
-- Power BI `.pbix` file is included in this repo
-- Dashboard includes slicers for:
+## 📍 Filters & Interactivity
+- Slicers available for:
   - County
   - City
-  - Electric Vehicle Type
   - Model Year
+  - Electric Vehicle Type (BEV / PHEV)
   - Electric Utility
 
 ---
 
-## 📅 Future Improvements
-- Merge with population/census data for per capita analysis
-- Predictive model for next 5 years of EV growth
-- Expand scope to national or multi-state data
+## 🧠 Key Business Insights
+- **King County** tops EV registrations in the state
+- **Tesla**, **Chevrolet**, and **Nissan** lead in market share
+- **Post-2019 EV boom** shows the impact of government incentives and awareness
+- **BEVs have higher CAFV eligibility** than PHEVs, supporting green initiatives
+- **Utility-based planning** helps optimize infrastructure and grid readiness
+- **Emerging EV brands like Rivian and Polestar are gaining traction**, indicating increasing competition and consumer choice in the market
+- 
+---
+
+## 📦 Deployment
+- Included Files:
+  - `Electric Vehicle Adoption Dashboard.pbix`
+  - [Flourish Bar Chart Race](https://public.flourish.studio/visualisation/22896671/)
+
 
 ---
 
-## 🌟 Author
+## 🚀 Future Enhancements
+- Integrate population data for per capita analysis
+- Build predictive ML model for future EV growth
+- Expand to cover all U.S. states or global adoption metrics
+
+---
+
+## 👨‍💻 Author
 **Abhijith VS**  
-IIT Madras - Diploma in Data Science  
-[LinkedIn Profile](www.linkedin.com/in/vsabhijith)
+IIT Madras – Diploma in Data Science  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/vsabhijith)
 
